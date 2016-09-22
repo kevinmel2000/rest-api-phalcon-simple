@@ -1,0 +1,111 @@
+=============== TEST API User Hexaview =========================
+-- GET Data --
+curl -i -X GET http://api.con/api/user
+
+curl -i -X GET http://api.con/api/user/search/admin
+
+curl -i -X GET http://api.con/api/1
+
+-- POST Data --
+curl -i -X POST -d '{"username":"deny","password":"123"}' http://api.con/api/user
+
+-- PUT Data --
+curl -i -X PUT -d '{"username":"denisss","password":"123"}' http://api.con/api/user/3
+
+-- DELETE Data --
+curl -i -X DELETE http://api.con/api/user/3
+
+================ END =============================================
+
+
+
+
+
+=============== TEST API Content Web Hexaview ====================
+-- GET Data --
+curl -i -X GET http://api.con/api/contentWeb
+
+curl -i -X GET http://api.con/api/contentWeb/search/arisa
+
+curl -i -X GET http://api.con/api/contentWeb/1
+
+-- POST Data --
+curl -i -X POST -d '{"name_content":"Haier","decription_content":"test","date_content":"19/9/1026","category_content":"branding","image_content":"a.jpg","title_content":"Test Merupakan Test","summary_content":"Test"}' http://api.con/api/contentWeb
+
+-- PUT Data --
+curl -i -X PUT -d '{"name_content":"Haier1","decription_content":"test1","date_content":"19/9/1026","category_content":"branding","image_content":"a1.jpg","title_content":"Test1 Merupakan Test1","summary_content":"Test1"}' http://api.con/api/contentWeb/3
+
+-- DELETE Data --
+curl -i -X DELETE http://api.con/api/contentWeb/3
+
+================ END =============================================
+
+
+
+
+
+=============== TEST API Client Hexaview =========================
+-- GET Data --
+curl -i -X GET http://api.con/api/client
+
+curl -i -X GET http://api.con/api/client/search/arisa
+
+curl -i -X GET http://api.con/api/client/1
+
+-- POST Data --
+curl -i -X POST -d '{"name_client":"Haier","image_client":"test.jpg"}' http://api.con/api/client
+
+-- PUT Data --
+curl -i -X PUT -d '{"name_client":"Haier1","image_client":"test1.jpg"}' http://api.con/api/client/2
+
+-- DELETE Data --
+curl -i -X DELETE http://api.con/api/client/2
+
+================ END =============================================
+
+
+
+
+
+=============== TEST API Slider Hexaview =========================
+-- GET Data --
+curl -i -X GET http://api.con/api/slider
+
+curl -i -X GET http://api.con/api/slider/search/544120160812063306.jpeg
+
+curl -i -X GET http://api.con/api/slider/1
+
+-- POST Data --
+curl -i -X POST -d '{"name_slider":"test.jpg"}' http://api.con/api/slider
+
+-- PUT Data --
+curl -i -X PUT -d '{"name_slider":"test1.jpg"}' http://api.con/api/slider/26
+
+-- DELETE Data --
+curl -i -X DELETE http://api.con/api/slider/2
+
+================ END =============================================
+
+
+
+
+
+=============== TEST API Career Hexaview =========================
+-- GET Data --
+curl -i -X GET http://api.con/api/career
+
+curl -i -X GET http://api.con/api/career/search/web
+
+curl -i -X GET http://api.con/api/career/1
+
+-- POST Data --
+
+curl -i -X POST -d '{"tittle_career":"test","descriptions_career":"test","responsibilities_career":"test","qualifications_career":"test","date_post":"19/9/2016","close_date":"test","location_career":"jakarta","image_career":"test.jpg"}' http://api.con/api/career
+
+-- PUT Data
+curl -i -X PUT -d '{"tittle_career":"test1","descriptions_career":"test1","responsibilities_career":"test1","qualifications_career":"test1","date_post":"29/9/2016","close_date":"test1","location_career":"jakarta1","image_career":"test1.jpg"}' http://api.con/api/career/26
+
+-- DELETE Data --
+curl -i -X DELETE http://api.con/api/career/2
+
+================ END =============================================
